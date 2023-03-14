@@ -2,7 +2,7 @@
 // Design an function to calculate pament cost not sure about. How many transection of the mount;
 // so add another parameter(freq) for how many transection for that mounth
 function paymentCost(cash, freq) {
-  let cost = (3 + cash * 0.01 + cash) * freq;
+  let cost = (3 + cash * 0.1/100 + cash) * freq;
   let summary = `Should pay ${cost.toFixed(2)}$`;
   return summary;
 }
